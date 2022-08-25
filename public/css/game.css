@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#game {
+    position: relative;
+    top: 140px;
+    left: 250px;
+    width: 500px;
+    height: 296px;
+    background: url("../images/background2.png") 0px 0px;
+    transform: scale(2.0);
+}
+.bgmove {
+    animation: bgmove 5s linear infinite;
+}
+@keyframes bgmove {
+    0% {
+        background: url("../images/background2.png") 0px 0px;
+    }
+    100% {
+        background: url("../images/background2.png") -1000px 0px;
+    }
+}
+#player {
+    position: relative;
+    top: 100px;
+    left: -120px;
+    width: 250px;
+    height: 170px;
+    transform: scale(1.2);
+}
+.move {
+    background: url("../images/player.png");
+    animation: move 0.5s infinite steps(8);
+}
+.jump {
+    background: url("../images/player.png") -390px -330px;
+    animation: jump 1s ease;
+}
+@keyframes move {
+    to {
+        background-position-x: -1020px;
+    }
+}
+@keyframes jump {
+    0% {
+        top: 100px;
+    }
+    60% {
+        top: -50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+#Enemy1 {
+    position: fixed;
+    top: 500px;
+    left: 940px;
+    width: 45px;
+    height: 48px;
+    background: url("../images/Enemy1.png") 50px 0px;
+    transform: scale(2);
+}
+.moveE1 {
+    animation: aniEnemy1 0.5s infinite steps(8), moveEnemy1 1.4s linear infinite;
+}
+@keyframes aniEnemy1 {
+    to {
+        background-position-x: -360px;
+    }
+}
+@keyframes moveEnemy1 {
+    0% {
+        left: 940px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+#Enemy2 {
+    position: fixed;
+    top: 480px;
+    left: 920px;
+    background: url("../images/Enemy2.png");
+    width: 100px;
+    height: 100px;
+}
+.moveE2 {
+    animation: moveEnemy2 1.4s linear infinite;
+}
+@keyframes moveEnemy2 {
+    0% {
+        left: 920px;
+        transform: rotate(0deg) scale(0.7);
+    }
+    100% {
+        left: -30px;
+        transform: rotate(-360deg) scale(0.7);
+    }
+}
+.hidden {
+    display: none;
+}
+.pause {
+    animation-play-state: paused;
+}
+#ScoreText {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+#SaveText {
+    position: fixed;
+    left: 160px;
+    top: 150px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    transition: all 0.2s linear;
+    font-size: 2.5rem;
+}
+
+#YesBtn {
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-size: 3rem;
+}
+#YesBtn:hover {
+    transform: scale(1.1);
+}
+#NoBtn {
+    position: fixed;
+    left: 600px;
+    top: 300px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-size: 3rem;
+}
+#NoBtn:hover {
+    transform: scale(1.1);
+}
+#name {
+    position: fixed;
+    left: 300px;
+    top: 250px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px white;
+    color: black;
+    background: white;
+    font-size: 2rem;
+}

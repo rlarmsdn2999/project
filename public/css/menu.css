@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#game {
+    position: relative;
+    top: 140px;
+    left: 250px;
+    background: url("../images/background2.png") -420px 0px;
+    width: 500px;
+    height: 296px;
+    transform: scale(2.0);
+}
+#GameTitle {
+    position: fixed;
+    top: 100px;  
+    left: 340px;
+    background: url("../images/title.png") 0px 0px;
+    width: 342px;
+    height: 171px;
+    transform: scale(1.3);
+    animation: titlemove 2s ease infinite;
+}
+@keyframes titlemove {
+    0% {
+        top: 100px;
+    }
+    50% {
+        top: 90px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+#GameStartBtn {
+    position: fixed;
+    left: 430px;
+    top: 300px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    animation: move 2s ease infinite;
+    transition: all 0.2s linear;
+    font-size: 2.5rem;
+}
+#GameStartBtn:hover {
+    transform: scale(1.1);
+}
+@keyframes move {
+    0% {
+        top: 320px;
+    }
+    50% {
+        top: 315px;
+    }
+    100% {
+        top: 320px;
+    }
+}
+#ScoreBtn {
+    position: fixed;
+    left: 430px;
+    top: 400px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    animation: scoremove 2s ease infinite;
+    transition: all 0.2s linear;
+    font-size: 2.5rem;
+}
+#ScoreBtn:hover {
+    transform: scale(1.1);
+}
+@keyframes scoremove {
+    0% {
+        top: 400px;
+    }
+    50% {
+        top: 395px;
+    }
+    100% {
+        top: 400px;
+    }
+}
+#RankBtn {
+    position: fixed;
+    left: 460px;
+    top: 470px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    animation: rankmove 2s ease infinite;
+    transition: all 0.2s linear;
+    font-size: 2.5rem;
+}
+#RankBtn:hover {
+    transform: scale(1.1);
+}
+@keyframes rankmove {
+    0% {
+        top: 470px;
+    }
+    50% {
+        top: 465px;
+    }
+    100% {
+        top: 470px;
+    }
+}

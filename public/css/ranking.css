@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#game {
+    position: relative;
+    top: 140px;
+    left: 250px;
+    background: url("../images/background2.png") -420px 0px rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 500px;
+    height: 296px;
+    transform: scale(2.0);
+}
+#name {
+    position: fixed;
+    top: 60px;
+    left: 350px;
+    color: rgb(196, 89, 151);
+    font-size: 2.0rem;
+}
+
+#rankingList {
+    position: fixed;
+    top: 120px;
+    left: 350px;
+    color: white;
+    font-size: 2.0rem;
+}
+#backBtn {
+    position: fixed;
+    left: 800px;
+    top: 500px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 5px red;
+    color: white;
+    background: linear-gradient(to bottom, rgb(247, 50, 50) 50%, orange 50%);
+    cursor: pointer;
+    animation: move 2s ease infinite;
+    transition: all 0.2s linear;
+    font-size: 2.5rem;
+}
+#backBtn:hover {
+    transform: scale(1.1);
+}

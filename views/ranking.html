@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>학교에서 살아남기(랭킹)</title>
+    <link rel="stylesheet" href="css/ranking.css">
+</head>
+<body>
+    <div id="game"></div>
+    <div id="name"><pre>닉네임        점수</pre></div>
+    <div id="rankingList">
+        <% for(let i = 0; i < rank_list.length; i++) { %>
+               <%= rank_list[i] %> &emsp;&emsp;&emsp;&emsp;
+            <% if(i % 2 == 1) { %>
+                <p></p>
+            <% } %>
+        <% } %>
+    </div>
+    <div id="backBtn" onclick="javascript:location.href='menu'">뒤로가기</div>
+</body>
+</html>

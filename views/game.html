@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <title>학교에서 살아남기(인게임)</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <div id="game"></div>
+    <div id="player"></div>
+    <div id="Enemy1"></div>
+    <div id="Enemy2"></div>
+    <div id="ScoreText">Score : <span>0</span></div>
+    <div id="SaveText" class="hidden">저장하시겠습니까? 최종 Score : <span>0</span></div>
+    <form action="/menu" method="post">
+        <input id="score" value="" name="user_score">
+        <input id="name" class="hidden" type="text" name="user_name" maxlength="6">
+        <input id="YesBtn" type="submit" class="hidden" value="Yes"></div>
+    </form>
+    <div id="NoBtn" class="hidden">No</div>
+    <script src="Js/game.js"></script>
+</body>
+</html>
